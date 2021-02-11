@@ -3,6 +3,21 @@
   <head>
     <meta charset="UTF-8">
     <title>Totsugekitai-no-page</title>
+    <style>
+      table#issues tbody th {
+      text-align:left;
+      }
+      ul#profiles {
+        list-style:none;      
+      }
+      ul#profiles dl dt {
+      display:inline-block;
+      }
+      ul#profiles dl dd {
+      display:inline-block;
+      }
+      
+    </style>
   </head>
   <body>
     <h1>ここは突撃隊の個人ページです</h1>
@@ -14,17 +29,21 @@
     </p>
 
     <h2>■プロフィール</h2>
-    <h3>・誕生日：８月１１日</h3>
-    <h3>・所属：筑波大学情報学群情報科学類</h3>
-    <h3>・趣味：浅く広く</h3>
+    <ul id="profiles"><li><dl><dt>誕生日</dt><dd><time datetime="08-11">８月１１日</time></dd></dl></li>
+      <li><dl><dt>所属</dt><dd>筑波大学情報学群情報科学類</dd></dl></li>
+      <li><dl><dt>趣味</dt><dd>浅く広く</dd></dl>
+    </ul>
 
     <h2>■経歴</h2>
-    <h4>[2016-03] 北杜市立甲陵高校　卒業</h4>
-    <h4>[2018-04] 筑波大学情報学群情報科学類　入学</h4>
-    <h4>[2019-07 - 2020-07] サイボウズラボユースで活動</h4>
-    <h4>[2019-08] セキュリティキャンプ OS開発ゼミ　修了</h4>
-    <h4>[2020-09 - ] 株式会社Axell アルバイト</h4>
-
+    <table id="issues"><thead><tr><th scope="col" id="date" hidden>date</th><th scope="col" id="issue" hidden>issue</th></tr></thead>
+      <tbody>
+        <tr><th scope="row" headers="date" id="date_201603">[<time datetime="2016-03">2016-03</time>]</th><td headers="issue date_201603">北杜市立甲陵高校　卒業</td></tr>
+        <tr><th scope="row" headers="date" id="date_201804">[<time datetime="2018-04">2018-04</time>]</th><td headers="issue date_201804">筑波大学情報学群情報科学類　入学</td></tr>
+        <tr><th scope="row" headers="date" id="date_201907-202007">[<time datetime="2019-07">2019-07</time> - <time datetime="2020-07">2020-07</time>]</th><td headers="issue date_201907-202007">サイボウズラボユースで活動</td>
+        <tr><th scope="row" headers="date" id="date_201908">[<time datetime="2019-08">2019-08</time>]</th><td headers="issue date_201908">セキュリティキャンプ OS開発ゼミ　修了</td>
+        <tr><th scope="row" headers="date" id="date_2020-09-">[<time datetime="2020-09">2020-09</time> - ]</th><td headers="issue date_2020-09-"> 株式会社Axell アルバイト</h4>
+      </tbody>  
+    </table>
     <h2>■取り組んでいること</h2>
     <p>
       私は、自作OSに取り組んでいます。<br>
